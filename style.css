@@ -23,10 +23,12 @@ body {
   padding: 4.8rem 0 0 0;
   background: #000;
 }
-.btn-logo {
+.btn-logo:is(:link, :visited) {
   text-decoration: none;
   font-size: 1.6rem;
   color: #fff;
+}
+.btn-logo {
 }
 .nav-box {
   list-style: none;
@@ -40,18 +42,36 @@ body {
   color: #ffffffc4;
   text-decoration: none;
   font-weight: 100;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background: #ceb12e;
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav-box li:hover a::after {
+  width: 100%;
 }
 .btn {
   text-decoration: none;
   font-size: 1.6rem;
 }
-.btn--nav {
+.btn--nav:is(:link, :visited) {
   color: #000;
   border-radius: 2%;
   background: #ffdb3c;
   font-weight: 300;
   font-size: 1.4rem;
   padding: 1.2rem 2.4rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn--nav:is(:hover, :active) {
+  background: #ceb12e;
 }
 .section {
   padding: 9rem 0;
@@ -98,14 +118,19 @@ body {
   gap: 2.4rem;
   justify-content: center;
 }
-.btn-card {
+.img-card {
+  width: 100%;
+}
+.btn-card:is(:link, :visited) {
   text-decoration: none;
   font-size: 3.6rem;
   font-weight: 200;
   letter-spacing: 0.1rem;
-}
-.btn-card:is(:link, :visited) {
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.btn-card:is(:hover, :active) {
+  color: #ceb12e;
 }
 .dis-secondary {
   font-weight: 200;
