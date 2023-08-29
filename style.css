@@ -77,3 +77,30 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.section-2 {
+  display: flex;
+  padding-top: 3.6rem;
+  gap: 9.6rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 2.4rem;
+  justify-content: center;
+}
+.btn-card {
+  text-decoration: none;
+  font-size: 3.6rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+.btn-card:is(:link, :visited) {
+  color: #fff;
+}
+.dis-secondary {
+  font-weight: 200;
+  font-size: 1.6rem;
+  color: #ffffffa9;
+  font-family: "Inter", sans-serif;
+}
