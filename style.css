@@ -6,3 +6,43 @@
 html {
   font-size: 62.5%;
 }
+/* body font-family: 'Inter', sans-serif; */
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Prata", serif;
+  align-items: center;
+}
+.container {
+  padding: 4.8rem 9.6rem;
+  background: #000;
+}
+.btn-logo {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.nav-box {
+  list-style: none;
+  display: flex;
+  gap: 3.6rem;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.nav-link {
+  font-size: 1.6rem;
+  color: #ffffffc4;
+  text-decoration: none;
+}
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.btn--nav {
+  color: #000;
+  border-radius: 2%;
+  background: #ffdb3c;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 1.2rem 2.4rem;
+}
